@@ -38,7 +38,9 @@ You can also use the reverse version:
 
 Add this line to your application's Gemfile:
 
-    gem 'grater'
+``` ruby
+gem 'grater'
+```
 
 And then execute:
 
