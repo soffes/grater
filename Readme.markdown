@@ -32,7 +32,7 @@ You can also use the reverse version:
 </div>
 ```
 
-`div.grater` is intended to be enclosed in a 640px or 300px container. You can optionally add `<div class="grater-container">` around it to get this functionality.
+**Important:** `div.grater` is intended to be enclosed in a 640px or 300px container. You can optionally add `<div class="grater-container">` around it to get this functionality.
 
 ## Asset Pipeline
 
