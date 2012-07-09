@@ -1,0 +1,16 @@
+PATH
+  remote: .
+  specs:
+    grater (0.1.0)
+      sass (~> 3.2.0.alpha.261)
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+    sass (3.2.0.alpha.261)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  grater!
