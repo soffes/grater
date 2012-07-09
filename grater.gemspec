@@ -10,8 +10,8 @@ Gem::Specification.new do |s|
   s.summary     = 'CSS grids as easy to use as a cheese grater'
   s.description = "This gem provides the grate CSS grid system for your Rails 3 application."
   
-  # The alpha is required since we use media queries
-  s.add_dependency 'sass', '~> 3.2.0.alpha.261'
+  s.add_dependency 'sass', '>= 3.2.0.alpha.261' # Use alpha since we use @media syntax
+  s.add_development_dependency 'rake'
   
   s.files        = `git ls-files`.split("\n")
   s.require_path = 'lib'

@@ -1,0 +1,52 @@
+// Row
+div.grate {
+  // Columns
+  > div {
+    width: 300px;
+    margin: 0 0 2em;
+
+    // First column
+    &:first-child {
+      float: left;
+    }
+
+    // Second column
+    &:last-child {
+      float: right;
+    }
+  }
+
+  // When the `reverse` class is added, the columns are switch
+  &.reverse > div {
+    &:first-child {
+      float: right;
+    }
+
+    &:last-child {
+      float: left;
+    }
+  }
+  
+  // Clearfix
+  zoom: 1;
+  
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+  
+  &:after {
+    clear: both;
+  }
+
+  // Responsive
+  @media all and (max-width: 660px) {
+    margin-bottom: 1em;
+
+    > div {
+      float: none !important; // Shut up. I know, I know
+      margin: 0 auto 2em;
+    }
+  }
+}
