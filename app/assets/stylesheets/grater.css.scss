@@ -1,8 +1,23 @@
-// Row
-section.grater {
+$grater-large-container-width: 640px;
+$grater-small-container-width: 300px;
+$grater-column-width: 300px;
+$grater-small-media-query: "all and (max-width: 660px)";
+
+// Grater container
+div.grater-container {
+  width: $grater-large-container-width;
+  margin: 0 auto;
+  
+  @media #{$grater-small-media-query} {
+    width: $grater-small-container-width;
+  }
+}
+
+// Grater row
+div.grater {
   // Columns
-  > section {
-    width: 300px;
+  > div {
+    width: $grater-column-width;
     margin: 0 0 2em;
 
     // First column
@@ -17,7 +32,7 @@ section.grater {
   }
 
   // When the `reverse` class is added, the columns are switch
-  &.reverse > section {
+  &.reverse > div {
     &:first-child {
       float: right;
     }
@@ -41,10 +56,10 @@ section.grater {
   }
 
   // Responsive
-  @media all and (max-width: 660px) {
+  @media #{$grater-small-media-query} {
     margin-bottom: 1em;
 
-    > section {
+    > div {
       float: none !important; // Shut up. I know, I know
       margin: 0 auto 2em;
     }
