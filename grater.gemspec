@@ -1,18 +1,20 @@
-require File.expand_path('../lib/grater', __FILE__)
+# -*- encoding: utf-8 -*-
+require File.expand_path('../lib/grater/version', __FILE__)
 
-Gem::Specification.new do |s|
-  s.name        = 'grater'
-  s.version     = Grater::VERSION
-  s.platform    = Gem::Platform::RUBY
-  s.authors     = ['Sam Soffes']
-  s.email       = ['sam@samsoff.es']
-  s.homepage    = 'http://github.com/samsoffes/grater'
-  s.summary     = 'CSS grids as easy to use as a cheese grater'
-  s.description = "This gem provides the grate CSS grid system for your Rails 3 application."
+Gem::Specification.new do |gem|
+  gem.authors       = ['Sam Soffes']
+  gem.email         = ['sam@samsoff.es']
+  gem.summary       = 'CSS grids as easy to use as a cheese grater'
+  gem.description   = 'This gem provides the grate CSS grid system for your Rails 3 application.'
+  gem.homepage      = 'https://github.com/samsoffes/grater'
+
+  gem.files         = `git ls-files`.split($\)
+  gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
+  gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
+  gem.name          = 'grater'
+  gem.require_paths = ['lib']
+  gem.version       = Grater::VERSION
   
-  s.add_dependency 'sass', '>= 3.2.0.alpha.261' # Use alpha since we use @media syntax
-  s.add_development_dependency 'rake'
-  
-  s.files        = `git ls-files`.split("\n")
-  s.require_path = 'lib'
+  gem.add_dependency 'sass', '>= 3.2.0.alpha.261' # Use alpha since we use @media syntax
+  gem.add_development_dependency 'rake'
 end

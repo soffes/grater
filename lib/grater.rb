@@ -1,4 +1,5 @@
+require 'grater/version'
+require 'grater/engine'
+
 module Grater
-  VERSION = '0.1.0'
 end
-  

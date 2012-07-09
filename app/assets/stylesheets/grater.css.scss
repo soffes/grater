@@ -1,7 +1,7 @@
 // Row
-div.grate {
+section.grater {
   // Columns
-  > div {
+  > section {
     width: 300px;
     margin: 0 0 2em;
 
@@ -17,7 +17,7 @@ div.grate {
   }
 
   // When the `reverse` class is added, the columns are switch
-  &.reverse > div {
+  &.reverse > section {
     &:first-child {
       float: right;
     }
@@ -44,7 +44,7 @@ div.grate {
   @media all and (max-width: 660px) {
     margin-bottom: 1em;
 
-    > div {
+    > section {
       float: none !important; // Shut up. I know, I know
       margin: 0 auto 2em;
     }
