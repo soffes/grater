@@ -4,17 +4,17 @@ $grater-column-width: 300px;
 $grater-small-media-query: "all and (max-width: 660px)";
 
 // Grater container
-div.grater-container {
+.grater-container {
   width: $grater-large-container-width;
   margin: 0 auto;
-  
+
   @media #{$grater-small-media-query} {
     width: $grater-small-container-width;
   }
 }
 
 // Grater row
-div.grater {
+.grater {
   // Columns
   > div {
     width: $grater-column-width;
@@ -41,16 +41,16 @@ div.grater {
       float: left;
     }
   }
-  
+
   // Clearfix
   zoom: 1;
-  
+
   &:before,
   &:after {
     content: "";
     display: table;
   }
-  
+
   &:after {
     clear: both;
   }

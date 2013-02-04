@@ -7,4 +7,4 @@ task :compile do
   puts 'Compiled to grater.css'
 end
 
-task default: :compile
+task :default => :compile
