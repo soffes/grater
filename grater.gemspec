@@ -18,5 +18,4 @@ Gem::Specification.new do |gem|
 
   gem.required_ruby_version = '>= 1.8.7'
   gem.add_dependency 'sass', '>= 3.2.0'
-  gem.add_development_dependency 'rake'
 end
