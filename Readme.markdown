@@ -4,6 +4,12 @@ CSS grids as easy to use as a cheese grater. Read the philosphy behind this supe
 
 Simply download [grater.css](https://github.com/samsoffes/grater/raw/master/grater.css) to get started. You can also install it as a gem if you are using Rails 3.1 or higher with the asset pipeline (see below).
 
+## Example
+
+![Two Columns](http://assets.samsoff.es/posts/my-grid-system/grid1.png)
+
+![Stacked](http://assets.samsoff.es/posts/my-grid-system/grid2.png)
+
 ## Usage
 
 Simply structure some HTML like this:
