@@ -1,7 +1,7 @@
-$grater-large-container-width: 640px;
-$grater-small-container-width: 300px;
-$grater-column-width: 300px;
-$grater-small-media-query: "all and (max-width: 660px)";
+$grater-large-container-width: 640px !default;
+$grater-small-container-width: 300px !default;
+$grater-column-width: 300px !default;
+$grater-small-media-query: "all and (max-width: 660px)" !default;
 
 // Grater container
 .grater-container {
