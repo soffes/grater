@@ -6,9 +6,9 @@ Simply download [grater.css](https://github.com/samsoffes/grater/raw/master/grat
 
 ## Example
 
-![Two Columns](http://assets.samsoff.es/posts/my-grid-system/grid1.png)
+![Two Columns](https://soffes-assets.s3.amazonaws.com/images/grater/grid1.png
 
-![Stacked](http://assets.samsoff.es/posts/my-grid-system/grid2.png)
+![Stacked](https://soffes-assets.s3.amazonaws.com/images/grater/grid2.png)
 
 ## Usage
 
