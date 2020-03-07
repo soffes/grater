@@ -7,8 +7,16 @@ PATH
 GEM
   remote: https://rubygems.org/
   specs:
-    rake (10.0.3)
-    sass (3.2.11)
+    ffi (1.12.2)
+    rake (13.0.1)
+    rb-fsevent (0.10.3)
+    rb-inotify (0.10.1)
+      ffi (~> 1.0)
+    sass (3.7.4)
+      sass-listen (~> 4.0.0)
+    sass-listen (4.0.0)
+      rb-fsevent (~> 0.9, >= 0.9.4)
+      rb-inotify (~> 0.9, >= 0.9.7)
 
 PLATFORMS
   ruby
@@ -16,3 +24,6 @@ PLATFORMS
 DEPENDENCIES
   grater!
   rake
+
+BUNDLED WITH
+   2.1.4
